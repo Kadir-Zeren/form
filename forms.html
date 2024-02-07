@@ -7,5 +7,63 @@
   </head>
   <body>
     <h1>FORMS</h1>
+    <form action="./result.html">
+      <section id="name">
+        <label for="isim">Isim</label><br />
+        <input
+          type="text"
+          id="isim"
+          name="isim"
+          placeholder="adinizi giriniz"
+          name="isim"
+          value=""
+          required
+        />
+        <br /><br />
+        <label for="email">email</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="email giriniz"
+          required
+        />
+        <br /><br />
+        <label for="pass">Password</label><br />
+        <input
+          type="password"
+          id="pass"
+          name="pass"
+          placeholder="en az 8 karekter"
+          required
+          p
+        />
+        <br /><br />
+        <label for="age">age</label><br />
+        <input
+          type="number"
+          id="age"
+          name="age"
+          min="0"
+          max="160"
+          placeholder="yasinizi giriniz"
+        />
+        <br /><br />
+        <label for="gender">Gender</label><br />
+        <label for="erkek">erkek</label>
+        <input type="radio" id="erkek" name="gender" value="erkek" />
+
+        <label for="kadin">kadin</label>
+        <input type="radio" id="kadin" name="gender" value="kadin" />
+
+        <label for="none">none</label>
+        <input type="radio" id="none" name="gender" checked value="none" />
+      </section>
+      <br /><br />
+      <section id="buttons">
+        <button type="submit" value="Kaydet">kaydet</button>
+        <button type="reset" value="sil">sil</button>
+      </section>
+    </form>
   </body>
 </html>
